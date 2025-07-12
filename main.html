@@ -1,16 +1,28 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Enter Metaverse</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+  <h2>enter-metaverse</h2>
+
+  <p id="status">Enter the Metaverse</p>
+  <button id="enterBtn">Enter</button>
+
+  <script>
+    // Get references to DOM elements
+    const statusPara = document.getElementById('status');
+    const enterBtn = document.getElementById('enterBtn');
+
+    // Add click event listener
+    enterBtn.addEventListener('click', function () {
+      // Replace <p> with <h1> and updated text
+      statusPara.outerHTML = '<h1 id="status">Entered Metaverse</h1>';
+    });
+  </script>
 
 </body>
-
 </html>
+
